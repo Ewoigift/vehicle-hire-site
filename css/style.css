@@ -1,0 +1,152 @@
+
+:root{
+    --yellow:#ffba00;
+    --dark: #1e1e26;
+    --white:#ffffff;
+    --light-dark:#616168;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    outline:none;
+    transition:all .2s linear;
+}
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior:smooth;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    padding:1rem 7%;
+    background:var(--dark);
+    display:flex;
+    justify-content:space-between;
+    z-index:1000;
+    align-items:center;
+}
+
+header .logo{
+    color:var(--white);
+    font-size:1.5rem;
+    font-weight:bolder;
+}
+
+header .navbar a{
+    border-radius:.5rem;
+    padding:.5rem 1rem;
+    color:var(--white);
+    font-weight:bold;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    background:var(--yellow);
+    color:var(--dark);
+}
+
+header .icons i,
+header .icons a{
+    color:var(--light-dark);
+    cursor:pointer;
+    text-align:center;
+    margin-left:1.5rem;
+    font-size:1.2rem;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color:#fff;
+    transform:rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media(max-width:768px){
+    header .icons #menu-bars{
+        display:inline-block;
+    }
+
+    header .navbar{
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background:#fff;
+        padding:1rem;
+        clip-path:polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    header .navbar.active{
+        clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+
+    header .navbar a{
+        display:block;
+        padding:1.5rem;
+        font-size:2rem;
+        margin:1rem;
+        background:#eee;
+        color:var(--dark);
+    }
+}
+
+@media(max-width:991px){
+    html{
+        font-size:50%;
+    }
+
+    header{
+        padding:1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+
