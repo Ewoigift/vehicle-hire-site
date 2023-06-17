@@ -170,6 +170,12 @@ header .icons #menu-bars{
     color:var(--white);
 }
 
+.home .media-icons i:hover{
+    color:var(--yellow);
+}
+
+
+
 
 
 
