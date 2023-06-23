@@ -209,6 +209,58 @@ header .icons #menu-bars{
     padding-top:1rem;
 }
 
+.about{
+    padding-top: 2rem;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.about-img img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.about-text span{
+    font-weight: 500;
+    color: rgb(243, 76, 10);
+    text-transform: uppercase;
+}
+
+.about-text p{
+    margin: 0.5rem 0 1.4rem;
+}
+
+.about-text .btn{
+    padding: 10px 20px;
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.about-text .btn:hover {
+    background: rgb(175, 70, 22);
+}
+
+.copyright{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social a{
+    color: #444;
+    padding: 10px;
+    font-size: 21px;
+}
+
 
 
 .vehicles .vehicle-slider .swiper-slide-active img{
