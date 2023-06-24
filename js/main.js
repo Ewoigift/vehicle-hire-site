@@ -19,7 +19,7 @@ var swiper = new Swiper(".vehicle-slider", {
     grabCursor: true,
     centeredSlides: true,
     autoplay: {
-        delay: 9500,
+        delay: 8500,
         disableOnInteraction: false,
     },
     pagination: {

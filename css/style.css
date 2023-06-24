@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
 
 :root{
     --yellow:#ffba00;
@@ -13,6 +14,8 @@
     text-decoration:none;
     outline:none;
     transition:all .2s linear;
+    font-family: 'IM Fell Great Primer SC', serif;
+    
 }
 
 html, body{
@@ -36,17 +39,22 @@ header{
     left:0;
     right:0;
     padding:1rem 7%;
-    background:var(--dark);
+    background:rgba(30, 30, 38, 0.5);
     display:flex;
     justify-content:space-between;
     z-index:1000;
     align-items:center;
+    
 }
 
-header .logo img{
+header .logo {
     color:var(--white);
     font-size:1.5rem;
     font-weight:bolder;
+    text-align:center;
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+header .logo img{
     max-height: 36px;
 }
 
@@ -156,7 +164,7 @@ header .icons #menu-bars{
     font-size: 1rem;
     transition: all .2s linear;
     border: 1px solid var(--yellow);
-    width: 100px;
+    width: 150px;
     text-align: center;
 }
 
@@ -397,10 +405,32 @@ header .icons #menu-bars{
         color:var(--dark);
     }
 
+    .home .main-wrapper .details .content a.btn{
+        width:80px;
+    }
+
     .vehicles .vehicle-slider .box img{
         height: 400px;
     }
     
+    .vehicles .vehicle-slider .box .content h3{
+        font-size:2rem;
+    }
+
+    .vehicles .vehicle-slider .box .content .price{
+        font-size:2rem;
+    }
+
+    .vehicles .vehicle-slider .box .content p{
+        font-size:1.4rem;
+    }
+
+    .vehicles .vehicle-slider .box .content p span{
+        font-size:.7rem;
+    }
+
+
+
 }
 
 @media(max-width:991px){
